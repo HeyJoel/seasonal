@@ -1,7 +1,14 @@
 .container {
     padding: 0.7rem;
-    margin: 0.7rem;
+    margin: 0.7rem 0.7rem 0 0.7rem;
     display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
 }
 
 .mat-form-field {

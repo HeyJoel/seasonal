@@ -38,7 +38,8 @@ export class ProductsService {
       'categories': categories,
       'products': products
     }).pipe(
-      map(r => mapProducts(r.products, r.categories))
+      map(r => mapProducts(r.products, r.categories)),
+      shareReplay(1)
     );
 
     function mapProducts(products: ProductResponse[], categories: Map<string, Category>) {
