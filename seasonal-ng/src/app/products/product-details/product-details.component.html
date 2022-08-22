@@ -1,0 +1,52 @@
+<mat-card [routerLink]="['/products', product.productId]">
+
+    <mat-card-title>
+      <h1 class="title">{{product.name}}</h1>
+        <mat-card-subtitle *ngIf="product.aka">({{product.aka}})</mat-card-subtitle>
+    </mat-card-title>
+
+    <mat-card-content>
+  
+        <p>{{product.description}}</p>
+
+        <ul class="highlights" *ngIf="isBest || isEndOfSeason || isStartOfSeason || hasShortSeason">
+            <li *ngIf="isBest">
+                <mat-icon fontIcon="star"></mat-icon>
+                This item is at its best this time of year.
+            </li>
+            <li *ngIf="hasShortSeason">
+                <mat-icon fontIcon="bolt"></mat-icon>
+                This item is not usually available, get it while you can.
+            </li>
+            <li *ngIf="isStartOfSeason">
+                <mat-icon fontIcon="auto_awesome"></mat-icon>
+                This item has just become in season.
+            </li>
+            <li *ngIf="isEndOfSeason">
+                <mat-icon fontIcon="schedule"></mat-icon>
+                This item is at the end of it's season.
+            </li>
+            <li *ngIf="product.minSizeInCM" title="Minimum size: {{product.minSizeInCM}}cm">
+            <mat-icon fontIcon="straighten" 
+                [inline]="true"
+                aria-hidden="false"
+                aria-label="Minimum size"
+                ></mat-icon>&nbsp; Min-size:
+            {{product.minSizeInCM}}cm
+            </li>
+            <li *ngFor="let link of product.links" class="links">
+                <mat-icon fontIcon="link" [inline]="true"></mat-icon>&nbsp;
+                <a href="{{link.url}}" target="_blank" rel="noopener noreferrer">{{link.title}}</a>
+            </li>
+        </ul>
+
+        <h2>Season</h2>
+        <app-product-availability-matrix [product]="product" [selectedMonth]="month"></app-product-availability-matrix>
+
+        <h2 *ngIf="product.tips.length">Tips</h2>
+        <ul *ngIf="product.tips.length">
+            <li *ngFor="let tip of product.tips">{{tip}}</li>
+        </ul>
+
+    </mat-card-content>
+  </mat-card>

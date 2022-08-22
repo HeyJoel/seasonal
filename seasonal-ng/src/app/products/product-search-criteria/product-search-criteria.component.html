@@ -1,0 +1,19 @@
+<div class="container">
+    <mat-form-field appearance="fill">
+        <mat-label>Month</mat-label>
+        <mat-select [(ngModel)]="searchCriteria.month" (ngModelChange)="criteriaChange.emit()">
+          <mat-option *ngFor="let monthText of months; index as i" [value]="i">
+            {{monthText}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Order</mat-label>
+        <mat-select [(ngModel)]="searchCriteria.ordering" (ngModelChange)="criteriaChange.emit()">
+            <mat-option value="relevance">Relevance</mat-option>
+            <mat-option value="name">Name</mat-option>
+        </mat-select>
+    </mat-form-field>
+    
+</div>

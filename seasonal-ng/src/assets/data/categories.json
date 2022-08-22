@@ -1,0 +1,10 @@
+[{
+    "name": "Veg",
+    "categoryId": "veg"  
+},{
+    "name": "Fruit",
+    "categoryId": "fruit"  
+}, {
+    "name": "Seafood",
+    "categoryId": "seafood"  
+}]

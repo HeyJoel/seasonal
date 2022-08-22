@@ -1,0 +1,49 @@
+.wrapper {
+    margin: 1rem 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+
+td {
+    text-align: center;
+    border: 1px solid black;
+    height: 0.8rem;
+    height: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+th {
+    display: none;
+}
+
+span {
+    display: inline-block;
+    width: 0.8rem;
+    height: 0.8rem;
+    font-size: 0.8rem;
+}
+
+.indicator-container {
+    color: #000;
+
+    .indicator {
+        display: none;
+    }
+
+    &-best {
+        background-color: rgb(127, 247, 16);
+    }
+
+    &-available {
+        background-color: rgb(216, 225, 135);
+    }
+    &-not-available {
+        background-color: gray;
+        color: #fff;
+    }
+}

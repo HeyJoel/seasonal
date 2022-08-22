@@ -1,0 +1,34 @@
+.product-card {
+    margin: 1rem;
+    max-width: 30rem;
+
+    &:hover {
+        background-color: #555;
+    }
+}
+
+.mat-card-title {
+    display: flex;
+}
+
+.icons {
+    flex-grow: 1;
+    text-align: right;
+    font-size: 1rem;
+
+    mat-icon {
+        margin-left: 0.2rem;
+    }
+}
+
+.attributes {
+    padding: 0;
+    list-style: none;
+
+    li {
+        margin-bottom: 0.2rem;
+    }
+    a { 
+        color: #fff; 
+    }
+}

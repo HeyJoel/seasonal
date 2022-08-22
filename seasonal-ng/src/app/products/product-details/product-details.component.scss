@@ -1,0 +1,32 @@
+.mat-card {
+    max-width: 50rem;
+    margin: 1rem;
+}
+
+.title {
+    margin: 0 0 0.7rem;
+}
+
+.mat-card-title {
+    margin-bottom: 2rem;
+}
+
+.highlights {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+        font-size: 0.8rem;
+        margin-bottom: 0.7rem;
+    }
+    .mat-icon {
+        font-size: 0.8rem;
+        width: 0.8rem;
+        height:0.8rem;
+        margin-right: 0.7em;
+    }
+
+    a { 
+        color: #fff; 
+    }
+}

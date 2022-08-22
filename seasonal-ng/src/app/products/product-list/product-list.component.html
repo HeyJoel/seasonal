@@ -1,0 +1,6 @@
+<app-product-search-criteria [searchCriteria]="searchCriteria" (criteriaChange)="onCriteriaChange()"></app-product-search-criteria>
+<mat-tab-group>
+    <mat-tab label="{{category.name}}" *ngFor="let category of categories | async">
+        <app-product-list-grid [category]="category" [searchCriteria]="searchCriteria" [products]="products"></app-product-list-grid>
+    </mat-tab>
+</mat-tab-group>

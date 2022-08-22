@@ -1,0 +1,47 @@
+<mat-card class="product-card" [routerLink]="['/products', product.productId]">
+
+  <mat-card-title>
+    <span>{{product.name}}</span>
+    <span class="icons">
+      <mat-icon *ngIf="product.isBest(searchCriteria.month)"  
+        aria-hidden="false" 
+        aria-label="This item is at its best this time of year." 
+        title="This item is at its best this time of year." 
+        fontIcon="star"></mat-icon>
+      <mat-icon *ngIf="product.hasShortSeason()"  
+        aria-hidden="false" 
+        aria-label="This item is not usually available, get it while you can." 
+        title="This item is not usually available, get it while you can." 
+        fontIcon="bolt"></mat-icon>
+      <mat-icon *ngIf="product.isStartOfSeason(searchCriteria.month)"  
+        aria-hidden="false" 
+        aria-label="This item has just become in season." 
+        title="This item has just become in season." 
+        fontIcon="auto_awesome"></mat-icon>
+      <mat-icon *ngIf="product.isEndOfSeason(searchCriteria.month)"  
+        aria-hidden="false" 
+        aria-label="This item is at the end of it's season." 
+        title="This item is at the end of it's season." 
+        fontIcon="schedule"></mat-icon>
+    </span>
+  </mat-card-title>
+  <mat-card-subtitle *ngIf="product.aka">({{product.aka}})</mat-card-subtitle>
+
+  <mat-card-content>
+    <app-product-availability-matrix [product]="product" [selectedMonth]="searchCriteria.month"></app-product-availability-matrix>
+    <ul class="attributes">
+      <li *ngIf="product.minSizeInCM" title="Minimum size: {{product.minSizeInCM}}cm">
+        <mat-icon fontIcon="straighten" 
+          [inline]="true"
+          aria-hidden="false"
+          aria-label="Minimum size"
+          ></mat-icon>&nbsp; 
+        {{product.minSizeInCM}}cm
+      </li>
+      <li *ngFor="let link of product.links" class="links">
+        <mat-icon fontIcon="link" [inline]="true"></mat-icon>&nbsp;
+        <a href="{{link.url}}" target="_blank" rel="noopener noreferrer">{{link.title}}</a>
+      </li>
+    </ul>
+  </mat-card-content>
+</mat-card>
