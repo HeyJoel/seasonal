@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { ProductSearchCriteria } from '../data/models/product-search-criteria';
+import { ProductSearchCriteria } from 'src/app/data/models/product-search-criteria';
 
 @Component({
   selector: 'app-product-search-criteria',

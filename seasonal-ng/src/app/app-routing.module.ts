@@ -2,11 +2,19 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { HomeComponent } from './home/home/home.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { ProductListComponent } from './pages/product-list/product-list.component';
+import { ProductDetailsComponent } from './pages/product-details/product-details.component';
+import { ProductDetailResolverService } from './pages/product-details/product-detail-resolver.service';
 
 const routes: Routes = [
-  { path: '',   component: HomeComponent },
+  { path: '', component: ProductListComponent },
+  { 
+    path: 'products/:id', 
+    component: ProductDetailsComponent, 
+    resolve: {
+      product: ProductDetailResolverService
+    } },
   { path: '**', component: PageNotFoundComponent }
 ]
 

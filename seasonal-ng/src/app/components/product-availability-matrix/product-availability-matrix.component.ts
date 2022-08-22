@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Product } from '../data/models/product';
-import { SeasonalStatus } from '../data/models/seasonal-status';
+import { Product } from 'src/app/data/models/product';
+import { SeasonalStatus } from 'src/app/data/models/seasonal-status';
 
 @Component({
   selector: 'app-product-availability-matrix',

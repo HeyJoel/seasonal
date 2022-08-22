@@ -1,8 +1,8 @@
 import { Component, Input, OnInit, Output } from '@angular/core';
 import { map, Observable } from 'rxjs';
-import { Product } from '../data/models/product';
-import { Category } from '../data/models/category';
-import { ProductSearchCriteria } from '../data/models/product-search-criteria';
+import { Product } from 'src/app/data/models/product';
+import { Category } from 'src/app/data/models/category';
+import { ProductSearchCriteria } from 'src/app/data/models/product-search-criteria';
 
 @Component({
   selector: 'app-product-list-grid',

@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { BehaviorSubject, combineLatest, map, Observable } from 'rxjs';
-import { Category } from '../data/models/category';
-import { Product } from '../data/models/product';
-import { ProductSearchCriteria } from '../data/models/product-search-criteria';
-import { CategoriesService } from '../data/services/categories.service';
-import { ProductsService } from '../data/services/products.service';
+
+import { Category } from 'src/app/data/models/category';
+import { Product } from 'src/app/data/models/product';
+import { ProductSearchCriteria } from 'src/app/data/models/product-search-criteria';
+import { CategoriesService } from 'src/app/data/services/categories.service';
+import { ProductsService } from 'src/app/data/services/products.service';
 
 @Component({
   selector: 'app-product-list',

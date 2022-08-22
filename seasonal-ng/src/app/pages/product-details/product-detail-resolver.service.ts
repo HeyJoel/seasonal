@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, Resolve, Router, RouterStateSnapshot } from '@angular/router';
 import { EMPTY, mergeMap, Observable, of } from 'rxjs';
-import { Product } from '../models/product';
-import { ProductsService } from '../services/products.service';
+
+import { Product } from 'src/app/data/models/product';
+import { ProductsService } from 'src/app/data/services/products.service';
 
 @Injectable({
   providedIn: 'root'

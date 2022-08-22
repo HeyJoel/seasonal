@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Product } from '../data/models/product';
-import { ProductSearchCriteria } from '../data/models/product-search-criteria';
+import { Product } from 'src/app/data/models/product';
+import { ProductSearchCriteria } from 'src/app/data/models/product-search-criteria';
 
 @Component({
   selector: 'app-product-list-grid-item',
