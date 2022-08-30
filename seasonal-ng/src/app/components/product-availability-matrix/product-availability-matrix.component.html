@@ -10,7 +10,7 @@
                 [ngSwitch]="product.getSeasonalStatus(i + 1)" 
                 class="indicator-container indicator-container-{{product.getSeasonalStatus(i + 1)}}"
                 title="{{getSeasonalStatusDescription(i + 1)}}">
-                <span *ngIf="selectedMonth == (i + 1)">X</span>
+                <span *ngIf="selectedMonth === (i + 1)">X</span>
                 <span *ngSwitchCase="SeasonalStatusEnum.Available" class="indicator">Available</span>
                 <span *ngSwitchCase="SeasonalStatusEnum.Best" class="indicator">Best</span>
                 <span *ngSwitchCase="SeasonalStatusEnum.NotAvailable" class="indicator">Not available</span>

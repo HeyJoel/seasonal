@@ -1,0 +1,358 @@
+[{
+    "productId": "apples",
+    "name": "Apples",
+    "aka": "",
+    "categoryId": "fruit",
+    "available": [1,2,8,9,10,11,12],
+    "best": [9,10],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "tips": [],
+    "links": [{
+        "title":"Apples in the BBC Good Food Glossary",
+        "url": "https://www.bbcgoodfood.com/glossary/apple-glossary",
+        "categoryId": "bbc-good-food"
+    }]
+}, {
+    "productId": "cherry",
+    "name": "Cherry",
+    "aka": "",
+    "categoryId": "fruit",
+    "available": [6,7,8],
+    "best": [7],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "tips": ["Best stored in the fridge, but eaten at room temperature."],
+    "links": [{
+        "title":"Cherries in the BBC Good Food Glossary",
+        "url": "https://www.bbcgoodfood.com/glossary/cherry-glossary",
+        "categoryId": "bbc-good-food"
+    }]
+}, {
+    "productId": "plum",
+    "name": "Plum",
+    "aka": "Gage",
+    "categoryId": "fruit",
+    "available": [7,8,9],
+    "best": [8],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "tips": [],
+    "links": [{
+        "title":"Plums in the BBC Good Food Glossary",
+        "url": "https://www.bbcgoodfood.com/glossary/plum-glossary",
+        "categoryId": "bbc-good-food"
+    }]
+}, {
+    "productId": "raspberries",
+    "name": "Raspberries",
+    "aka": "",
+    "categoryId": "fruit",
+    "available": [6,7,8,9],
+    "best": [7,8],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "tips": ["Best stored in the fridge, but eaten at room temperature."],
+    "links": [{
+        "title":"Raspberries in the BBC Good Food Glossary",
+        "url": "https://www.bbcgoodfood.com/glossary/raspberry-glossary",
+        "categoryId": "bbc-good-food"
+    }]
+}, {
+    "productId": "rhubarb",
+    "name": "Rhubarb",
+    "aka": "",
+    "categoryId": "fruit",
+    "available": [3,4,5,6,7,8,9],
+    "best": [4,5,6],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "tips": ["Best stored in the fridge, but eaten at room temperature."],
+    "links": [{
+        "title":"Rhubarb in the BBC Good Food Glossary",
+        "url": "https://www.bbcgoodfood.com/glossary/rhubarb-glossary",
+        "categoryId": "bbc-good-food"
+    }]
+}, {
+    "productId": "strawberry",
+    "name": "Strawberry",
+    "aka": "",
+    "categoryId": "fruit",
+    "available": [5,6,7,8,9],
+    "best": [6,7],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "tips": ["Best stored in the fridge, but eaten at room temperature."],
+    "links": [{
+        "title":"Strawberry in the BBC Good Food Glossary",
+        "url": "https://www.bbcgoodfood.com/glossary/strawberry-glossary",
+        "categoryId": "bbc-good-food"
+    }]
+}, {
+    "productId": "asparagus",
+    "name": "Asparagus",
+    "aka": "",
+    "categoryId": "veg",
+    "available": [5,6],
+    "best": [5,6],
+    "description": "Asparagus has a short growing season, typically from May and June.",
+    "tips": [],
+    "links": [{
+        "title":"Asparagus in the BBC Good Food Glossary",
+        "url": "https://www.bbcgoodfood.com/glossary/asparagus-glossary",
+        "categoryId": "bbc-good-food"
+    }]
+}, {
+    "productId": "aubergine",
+    "name": "Aubergine",
+    "aka": "Egg Plant",
+    "categoryId": "veg",
+    "available": [5,6,7,8,9,10],
+    "best": [7,8,9],
+    "description": "Asparagus has a short growing season, typically from May and June.",
+    "tips": ["Best stored in the frige"],
+    "links": [{
+        "title":"Aubergine in the BBC Good Food Glossary",
+        "url": "https://www.bbcgoodfood.com/glossary/aubergine-glossary",
+        "categoryId": "bbc-good-food"
+    }]
+}, {
+    "productId": "beetroot",
+    "name": "Beetroot",
+    "categoryId": "veg",
+    "available": [1,2,3,4,5,6,7,8,9,10,11,12],
+    "best": [1,7,8,9,10,11,12],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "tips": [
+        "The leaves can be cooked as you would any leafy green such as shard and spinach.",
+        "Can also be eaten raw - grated or thinly sliced in salads of slaw.",
+        "Store in a cool, dark place."
+    ],
+    "links": [{
+        "title":"Beetroots in the BBC Good Food Glossary",
+        "url": "https://www.bbcgoodfood.com/glossary/beetroot-glossary",
+        "categoryId": "bbc-good-food"
+    }]
+}, {
+    "productId": "broad-beans",
+    "name": "Broad Beans",
+    "aka": "",
+    "categoryId": "veg",
+    "available": [6,7,8],
+    "best": [7],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "tips": ["Store in the fridge, or blanched beans can be frozen."],
+    "links": [{
+        "title":"Broad beans in the BBC Good Food Glossary",
+        "url": "https://www.bbcgoodfood.com/glossary/broad-bean-glossary",
+        "categoryId": "bbc-good-food"
+    }]
+},{
+    "productId": "broccoli",
+    "name": "Broccoli",
+    "aka": "Calebrese",
+    "categoryId": "veg",
+    "available": [6,7,8,9,10],
+    "best": [7,8,9],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "tips": ["Store in the fridge."],
+    "links": [{
+        "title":"Broccoli in the BBC Good Food Glossary",
+        "url": "https://www.bbcgoodfood.com/glossary/broccoli-glossary",
+        "categoryId": "bbc-good-food"
+    }]
+},{
+    "productId": "carrots",
+    "name": "Carrots",
+    "aka": "",
+    "categoryId": "veg",
+    "available": [6,7,8,9,10,11],
+    "best": [7,8,9],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "tips": ["Carrot leaves can be used to make pesto"],
+    "links": [{
+        "title":"Carrots in the BBC Good Food Glossary",
+        "url": "https://www.bbcgoodfood.com/glossary/carrots-glossary",
+        "categoryId": "bbc-good-food"
+    }]
+}, {
+    "productId": "celeriac",
+    "name": "Celeriac",
+    "aka": "",
+    "categoryId": "veg",
+    "available": [1,2,10,11,12],
+    "best": [11,12],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "tips": ["Store in the fridge."],
+    "links": [{
+        "title":"Celeriac in the BBC Good Food Glossary",
+        "url": "https://www.bbcgoodfood.com/glossary/celeriac-glossary",
+        "categoryId": "bbc-good-food"
+    }]
+}, {
+    "productId": "leek",
+    "name": "Leek",
+    "aka": "",
+    "categoryId": "veg",
+    "available": [1,2,3,8,9,10,11,12],
+    "best": [1,9,10,11,12],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "tips": ["Store in the fridge."],
+    "links": [{
+        "title":"Leeks in the BBC Good Food Glossary",
+        "url": "https://www.bbcgoodfood.com/glossary/leek-glossary",
+        "categoryId": "bbc-good-food"
+    }]
+},{
+    "productId": "onions",
+    "name": "Onions",
+    "aka": "",
+    "categoryId": "veg",
+    "available": [1,2,3,4,5,6,7,8,9,10,11,12],
+    "best": [],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "tips": [],
+    "links": []
+},{
+    "productId": "purple-sprouting-broccoli",
+    "name": "Purple Sprouting Broccoli",
+    "aka": "",
+    "categoryId": "veg",
+    "available": [2,3,4],
+    "best": [2,3],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "tips": ["Store in the fridge."],
+    "links": [{
+        "title":"Purple Sprouting Broccoli in the BBC Good Food Glossary",
+        "url": "https://www.bbcgoodfood.com/glossary/purple-sprouting-broccoli-glossary",
+        "categoryId": "bbc-good-food"
+    }]
+}, {
+    "productId": "sweetcorn",
+    "name": "Sweetcorn",
+    "aka": "",
+    "categoryId": "veg",
+    "available": [8,9,10],
+    "best": [9],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "tips": ["Best kept in the fridge."],
+    "links": [{
+        "title":"Sweetcorn in the BBC Good Food Glossary",
+        "url": "https://www.bbcgoodfood.com/glossary/sweetcorn-glossary",
+        "categoryId": "bbc-good-food"
+    }]
+},{
+    "productId": "cockle",
+    "name": "Cockle",
+    "aka": "",
+    "categoryId": "seafood",
+    "available": [1,2,8,9,10,11,12],
+    "best": [],
+    "minSizeInCM": 2,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "tips": [],
+    "links": [{
+        "title":"MCS Guide to Cockles",
+        "url": "https://www.mcsuk.org/goodfishguide/species/cockle",
+        "categoryId": "mcs"
+    }]
+}, {
+    "productId": "red-gurnard",
+    "name": "Red Gurnard",
+    "aka": "",
+    "categoryId": "seafood",
+    "available": [1,2,8,9,10,11,12],
+    "best": [8,9,10],
+    "minSizeInCM": 20,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "tips": [],
+    "links": [{
+        "title":"MCS Guide to the Red Gurnard",
+        "url": "https://www.mcsuk.org/goodfishguide/species/red-gurnard",
+        "categoryId": "mcs"
+    }]
+}, {
+    "productId": "brown-crab",
+    "name": "Brown Crab",
+    "aka": "Common Crab",
+    "categoryId": "seafood",
+    "available": [4,5,6,7,8,9,10,11,12],
+    "best": [8,9,10,11],
+    "minSizeInCM": 14,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "tips": [],
+    "links": [{
+        "title":"MCS Guide to Brown Crab",
+        "url": "https://www.mcsuk.org/goodfishguide/species/brown-crab/?search=crab",
+        "categoryId": "mcs"
+    }]
+}, {
+    "productId": "cod",
+    "name": "Cod",
+    "aka": "",
+    "categoryId": "seafood",
+    "available": [1,5,6,7,8,9,10,11,12],
+    "best": [5,6],
+    "minSizeInCM": 50,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "tips": [],
+    "links": [{
+        "title":"MCS Guide to Cod",
+        "url": "https://www.mcsuk.org/goodfishguide/?search=cod",
+        "categoryId": "mcs"
+    }]
+}, {
+    "productId": "sardine",
+    "name": "Sardine",
+    "aka": "Pilchard",
+    "categoryId": "seafood",
+    "available": [1,2,3,4,5,6,7,8,9,10,11,12],
+    "best": [7,8,9,10,11],
+    "minSizeInCM": 20,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "tips": [],
+    "links": [{
+        "title":"MCS Guide to Sardines",
+        "url": "https://www.mcsuk.org/goodfishguide/species/sardine/",
+        "categoryId": "mcs"
+    }]
+}, {
+    "productId": "mackerel",
+    "name": "Mackerel",
+    "aka": "",
+    "categoryId": "seafood",
+    "available": [1,2,8,9,10,11,12],
+    "best": [1,2,10,11,12],
+    "minSizeInCM": 30,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "tips": [],
+    "links": [{
+        "title":"MCS Guide to Mackerel",
+        "url": "https://www.mcsuk.org/goodfishguide/species/mackerel",
+        "categoryId": "mcs"
+    }]
+}, {
+    "productId": "rainbow-trout",
+    "name": "Rainbow Trout",
+    "aka": "",
+    "categoryId": "seafood",
+    "available": [1,2,3,4,5,6,7,8,9],
+    "best": [],
+    "minSizeInCM": 25,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "tips": [],
+    "links": [{
+        "title":"MCS Guide to Rainbow Trout",
+        "url": "https://www.mcsuk.org/goodfishguide/species/rainbow-trout/?search=trout",
+        "categoryId": "mcs"
+    }]
+}, {
+    "productId": "mussel",
+    "name": "Mussel",
+    "aka": "Blue Mussel",
+    "categoryId": "seafood",
+    "available": [1,2,3,4,9,10,11,12],
+    "best": [],
+    "minSizeInCM": 30,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "tips": [],
+    "links": [{
+        "title":"MCS Guide to Mackerel",
+        "url": "https://www.mcsuk.org/goodfishguide/species/mackerel",
+        "categoryId": "mcs"
+    }]
+}]

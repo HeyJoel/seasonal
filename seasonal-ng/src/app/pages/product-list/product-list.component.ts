@@ -40,7 +40,7 @@ export class ProductListComponent implements OnInit {
         .filter(p => {
           return r.criteria.month < 1 || p.isAvailable(r.criteria.month)
         })
-        .sort((p1, p2) => r.criteria.ordering == "relevance" ? p1.compareByRelevance(p2, r.criteria.month) : p1.compareByName(p2))
+        .sort((p1, p2) => r.criteria.ordering === "relevance" ? p1.compareByRelevance(p2, r.criteria.month) : p1.compareByName(p2))
       ));
   }
 

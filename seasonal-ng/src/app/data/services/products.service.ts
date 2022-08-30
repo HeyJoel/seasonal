@@ -46,8 +46,8 @@ export class ProductsService {
       return products.map(p => {
 
         let category = categories.get(p.categoryId);
-        if (category == undefined){
-          throw `Unknown category: ${p.categoryId}`;
+        if (category === undefined){
+          throw new Error(`Unknown category: ${p.categoryId}`);
         }
         return new Product(p, category)
       });

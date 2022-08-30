@@ -1,9 +1,9 @@
-import { ProductLink } from "./product-link";
-import { Category } from "./category";
-import { ProductResponse } from "./product-response";
-import { SeasonalStatus } from "./seasonal-status";
+import ProductLink from "./product-link";
+import Category from "./category";
+import ProductResponse from "./product-response";
+import SeasonalStatus from "./seasonal-status";
 
-export class Product {
+export default class Product {
 
     constructor(
         product: ProductResponse,
