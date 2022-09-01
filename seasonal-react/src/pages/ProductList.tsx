@@ -4,17 +4,22 @@ import categoryService from "data/services/categoryService";
 import Product from "data/models/product";
 import productService from "data/services/productService";
 import Loader from "components/Loader";
-import ProductGridItem from "components/ProductGridItem";
+import ProductGridItem from "components/Products/ProductGridItem";
 import ProductSearchCriteria from "data/models/product-search-criteria";
-import ProductSearchForm from "components/ProductSearchForm";
+import ProductSearchForm from "components/Products/ProductSearchForm";
 import Tab from "components/Tab";
 import TabGroup from "components/TabGroup";
+import Modal from "components/Modal";
+import ProductDetails from "./ProductDetails";
+import ProductDetailsHeader from "components/Products/ProductDetailsHeader";
+import ProductDetailsBody from "components/Products/ProductDetailsBody";
 
 export default function ProductList() {
     const [categories, setCategories] = useState<Category[] | null>(null);
     const [products, setProducts] = useState<Product[] | null>(null);
     const [filteredProducts, setFilteredProducts] = useState<Product[] | null>(null);
     const [searchCriteria, setSearchCriteria] = useState(new ProductSearchCriteria());
+    const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
     useEffect(initData, []);
     useEffect(applyProductFilter, [categories, products, searchCriteria]);
@@ -42,6 +47,16 @@ export default function ProductList() {
         setSearchCriteria(criteria);
     }
 
+    function onProductSelected(product: Product) {
+        window.history.replaceState(null, '', '/product/' + product.productId);
+        setSelectedProduct(product);
+    }
+
+    function onProductModalDismiss() {
+        window.history.replaceState(null, '', '/');
+        setSelectedProduct(null);
+    }
+
     return (
         <>
         <ProductSearchForm searchCriteria={searchCriteria} onCriteriaChange={onCriteriaChange} />
@@ -50,6 +65,13 @@ export default function ProductList() {
             <TabGroup>
                 {categories.map(renderCategory)}
             </TabGroup>
+        }
+        { selectedProduct && 
+        <Modal 
+            onDismiss={onProductModalDismiss} 
+            header={<ProductDetailsHeader product={selectedProduct} />}>
+            <ProductDetailsBody product={selectedProduct} month={searchCriteria.month} />
+        </Modal>
         }
         </>
     );
@@ -63,7 +85,11 @@ export default function ProductList() {
                 <div className="p-5 pt-7">
                     { !categoryProducts && <Loader /> }
                     { categoryProducts && categoryProducts.map(product => {
-                        return <ProductGridItem product={product} searchCriteria={searchCriteria} key={product.productId}/>
+                        return <ProductGridItem 
+                            product={product} 
+                            searchCriteria={searchCriteria} 
+                            onSelected={onProductSelected}
+                            key={product.productId}/>
                     })}
                 </div>
             </Tab>

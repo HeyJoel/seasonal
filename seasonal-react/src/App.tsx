@@ -1,5 +1,5 @@
 import AppRoutes from 'pages/AppRoutes';
-import Nav from './layout/Nav';
+import Nav from './components/layout/Nav';
 import { IconContext } from "@react-icons/all-files";
 
 function App() {

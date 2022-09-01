@@ -18,7 +18,7 @@ export default function TabGroup({ className, children }: TabGroupProps) {
                     {tabs.map(RenderTab)}
                 </ul>
             </div>
-            <div>
+            <div className="bg-lime-100  pt-5">
                 <div className="container mx-auto">
                     {tabs.map(RenderPanel)}
                 </div>
@@ -29,7 +29,7 @@ export default function TabGroup({ className, children }: TabGroupProps) {
 
     function RenderTab(tab: any, index: number) {
         let isActive = activeTabIndex === index;
-        let stateStyle = isActive ? 'border-t-2 border-l-2 border-r-2 bg-white relative top-0.5' : 'border-t border-l border-r hover:bg-green-700 hover:text-white';
+        let stateStyle = isActive ? 'border-t-2 border-l-2 border-r-2 bg-white relative top-0.5 bg-lime-100' : 'border-t border-l border-r hover:bg-green-700 hover:text-white';
 
         return (
             <li onClick={() => setActiveTabIndex(index)} 

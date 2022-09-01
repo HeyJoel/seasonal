@@ -5,7 +5,8 @@ import Category from 'data/models/category';
 import Product from 'data/models/product';
 
 const productService = {
-    getAll
+    getAll,
+    getById
 };
 export default productService
 
@@ -21,6 +22,10 @@ function getAll() {
         .then(r => mapProducts(...r));
 
     return results;
+}
+
+function getById(productId: string) {
+    return getAll().then(products => products.find(p => p.productId === productId) ?? null);
 }
 
 function mapProducts(products: ProductResponse[], categories: Map<string, Category>) {

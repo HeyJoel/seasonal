@@ -1,5 +1,5 @@
+import FormFieldSelect from "components/Forms/FormFieldSelect";
 import ProductSearchCriteria from "data/models/product-search-criteria";
-import FormFieldSelect from "./FormFieldSelect";
 
 interface ProductSearchFormProps {
     searchCriteria: ProductSearchCriteria,

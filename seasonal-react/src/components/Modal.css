@@ -1,0 +1,29 @@
+.modal-btn-cross {
+    text-indent: -200px;
+    overflow: hidden;
+    position: absolute;
+    top: 0.5rem;
+    right: 0;
+    border: none;
+    width: 4rem;
+    height: 4rem;
+  }
+
+.modal-btn-cross:after, .modal-btn-cross:before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 30px;
+    left: 50%;
+    top: 50%;
+    border-radius: 3px;
+    background: #fff;
+}
+
+.modal-btn-cross:before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.modal-btn-cross:after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
