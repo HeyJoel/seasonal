@@ -25,10 +25,9 @@ jobs:
           
     - name: Publish to Azure
       uses: azure/CLI@v1
-      working-directory: ./build
       with:
         inlineScript: |
-            az storage blob upload-batch --account-name seasonal  --auth-mode key -d '$web' -s .
+            az storage blob upload-batch --account-name seasonal  --auth-mode key -d '$web' -s /build/
     - name: logout
       run: |
             az logout
