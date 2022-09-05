@@ -27,7 +27,7 @@ jobs:
       uses: azure/CLI@v1
       with:
         inlineScript: |
-            az storage blob upload-batch --account-name <seasonal>  --auth-mode key -d '$web' -s ./build
+            az storage blob upload-batch --account-name seasonal  --auth-mode key -d '$web' -s ./build
     - name: logout
       run: |
             az logout
