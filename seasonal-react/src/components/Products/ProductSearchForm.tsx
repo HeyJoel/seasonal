@@ -29,7 +29,7 @@ export default function ProductSearchForm({ searchCriteria, onCriteriaChange }: 
 
     return (
     <div className="mb-4">
-        <form className="container mx-auto py-7 px-5 mb-7 grid gap-8 grid-cols-2">
+        <form className="container mx-auto py-7 px-5 md:mb-7 grid gap-8 grid-cols-2">
             <FormFieldSelect name="month" label="Month" onChange={ onFormValuesChange }>
                 { months.map((monthText, i) =>
                     <option value={i} key={i}>{monthText}</option>

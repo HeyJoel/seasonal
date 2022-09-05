@@ -31,11 +31,11 @@ export default function Modal(props: ModalProps) {
 
     return createPortal(
         <FocusTrap>
-            <div className={`bg-black/75 fixed top-0 left-0 w-full h-screen overflow-y-scroll flex justify-center`} onClick={onDismiss}>
-                <div className="bg-white w-full m-7 max-w-5xl rounded relative" 
+            <div className={`bg-black/75 fixed top-0 left-0 w-full h-screen flex justify-center`} onClick={onDismiss}>
+                <div className="bg-white w-full md:m-7 max-w-5xl rounded relative overflow-y-scroll" 
                     role="dialog" arial-modal="true" aria-live="assertive"
                     onClick={e => e.stopPropagation()}>
-                    <div className="px-7 py-5 bg-green-700 text-white rounded-t">{ props.header }</div>
+                    <div className="pl-7 pr-9 py-5 bg-green-700 text-white rounded-t">{ props.header }</div>
                     <button className={`modal-btn-cross`}
                         onClick={onDismiss}>Close</button>
                     <div className="p-7">

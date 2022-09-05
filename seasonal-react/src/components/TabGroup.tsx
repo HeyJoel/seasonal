@@ -14,7 +14,7 @@ export default function TabGroup({ className, children }: TabGroupProps) {
     return (
         <div>
             <div className="border-b-2 border-green-700">
-                <ul className="container mx-auto px-5 flex flex-row space-x-4">
+                <ul className="container mx-auto px-5 flex flex-row space-x-2 md:space-x-4">
                     {tabs.map(RenderTab)}
                 </ul>
             </div>
