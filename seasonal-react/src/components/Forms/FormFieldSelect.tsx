@@ -1,5 +1,5 @@
 import { SelectHTMLAttributes } from "react";
-import FormField, { FormFieldProps } from "./FormField";
+import FormField from "./FormField";
 
 type FormFieldSelectProps = SelectHTMLAttributes<HTMLSelectElement>& {
     label: string,

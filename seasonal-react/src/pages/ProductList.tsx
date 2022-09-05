@@ -10,7 +10,6 @@ import ProductSearchForm from "components/Products/ProductSearchForm";
 import Tab from "components/Tab";
 import TabGroup from "components/TabGroup";
 import Modal from "components/Modal";
-import ProductDetails from "./ProductDetails";
 import ProductDetailsHeader from "components/Products/ProductDetailsHeader";
 import ProductDetailsBody from "components/Products/ProductDetailsBody";
 
