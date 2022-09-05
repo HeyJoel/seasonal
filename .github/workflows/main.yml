@@ -27,7 +27,7 @@ jobs:
       uses: azure/CLI@v1
       with:
         inlineScript: |
-            az storage blob upload-batch --account-name seasonal  --auth-mode key -d '$web' -s /seasonal-react/build/
+            az storage blob upload-batch --account-name seasonal  --auth-mode key -d '$web' -s $GITHUB_WORKSPACE/seasonal-react/build/
     - name: logout
       run: |
             az logout
